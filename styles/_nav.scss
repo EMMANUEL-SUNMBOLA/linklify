@@ -1,0 +1,53 @@
+@import 'variables';
+
+nav{
+
+    width: 90%;
+    height: 100px;
+    border: 1px solid green;
+    display: flex;
+    padding: 1rem;
+    margin-top: 10%;
+    // align-self: center;
+    // justify-self: center;
+    position: fixed;
+    background-color: white;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // tube nav soon
+    // border-top-left-radius: 25%;
+    // border-top-right-radius: 25%;
+
+    // border-bottom-right-radius: 25%;
+    // border-bottom-left-radius: 25%;
+
+    .brand{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            img{
+                width: 85px;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        margin-left: auto;
+
+        .nav-item{
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 20px;
+        }
+    }
+
+}

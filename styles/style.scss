@@ -6,3 +6,17 @@
 }
 
 @import "main";
+@import "nav";
+
+
+@media (max-width: 768px) {
+
+    nav{
+        .brand{
+            .brand-name{
+                display: none;
+            }
+        }
+    }
+    
+}
