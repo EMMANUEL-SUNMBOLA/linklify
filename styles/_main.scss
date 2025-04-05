@@ -25,14 +25,25 @@ main{
     .about{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        
+        gap: 15px;
+
         p:nth-of-type(1){
             font-size: 30px;
         }
 
         p{
             font-size: 25px;
+        }
+
+        input{
+            width: 90%;
+            height: 70px;
+            font-size: 30px;
+            font-weight: 200;
+            outline: 0;
+            border: 0;
+            text-align: center;
+            border-radius: 5px;
         }
     }
 }
