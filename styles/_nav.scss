@@ -2,12 +2,13 @@
 
 nav{
 
-    width: 90%;
+    width: 95%;
     height: 100px;
     border: 1px solid green;
     display: flex;
     padding: 1rem;
     margin-top: 10%;
+    border-radius: 999px;
     // align-self: center;
     // justify-self: center;
     position: fixed;
@@ -42,11 +43,41 @@ nav{
         justify-content: center;
         margin-left: auto;
 
-        .nav-item{
-            font-family: "Poppins", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 20px;
+        .hamburger{
+            i{
+                font-size: 25px;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            
+            .nav-item{
+                color: black;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 22px;
+            }
+
+            .login{
+                height: 70px;
+                width: 110px;
+                border-radius: 450px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                transition: all .5s ease-in-out;
+                
+                &:hover{
+                    background-color: transparent;
+                    outline: 1px solid;
+                    color: black;
+                }
+            }
+            
         }
     }
 

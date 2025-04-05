@@ -5,4 +5,4 @@
 - signup
 - dashboard where links can be added a or removed
 
-![mockup](images/mockup.jpg)
+![mockup]("images/mockup.jpg")
