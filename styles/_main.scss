@@ -1,8 +1,38 @@
+@import 'variables';
+
 main{
-    height: 200vh;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 15rem 2rem;
+    gap: 2rem;
+    // align-items: center;
+    // justify-content: center;
     flex-direction: column;
     background-color: lightblue;
+
+    .branding{
+        font-size: 50px;
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        span{
+            font-family: "Bungee Tint", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        p:nth-of-type(1){
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+    }
 }
