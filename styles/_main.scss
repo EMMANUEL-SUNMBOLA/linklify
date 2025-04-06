@@ -35,6 +35,14 @@ main{
             font-size: 25px;
         }
 
+    }
+
+    .form{
+
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
         input{
             width: 90%;
             height: 70px;
@@ -45,5 +53,69 @@ main{
             text-align: center;
             border-radius: 5px;
         }
+
+        button{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 18px;
+
+            width: 30%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            transition: all .5s ease-in-out;
+            
+            &:hover{
+                background-color: transparent;
+                outline: 1px solid;
+                color: black;
+            }
+        }
+
     }
+}
+
+
+section{
+    height: 90vh;
+    padding: 5rem 1.5rem;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    button{
+        width: 50%;
+        height: 70px;
+        border-radius: 999px;
+        font-size: 25px;
+        color: white;
+    }
+
+
+    &:first-of-type{
+        background-color: $lightpurple;
+
+        h1, p{
+            color: $boldpurple;
+        }
+
+        button{
+            background-color: $boldpurple;
+        }
+
+    }
+
 }
