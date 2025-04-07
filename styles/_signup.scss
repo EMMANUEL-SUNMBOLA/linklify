@@ -1,0 +1,71 @@
+@import "variables";
+
+.signup{
+    background-color: $cyan;
+    background: linear-gradient(to right, $white, $cyan);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+    .container{
+        background-color: white;
+        width: 500px;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 20px 35px rgba(0,0,1,0.9);
+
+        .form-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 1.3rem;
+            margin-bottom: 0.4rem;
+        }
+
+        form{
+            margin: 0 2rem;
+
+            input{
+                color: inherit;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $char;
+                padding-left: 1.5rem;
+                font-size: 15px;
+
+                &:focus{
+                    outline: transparent;
+                    background-color: transparent;
+                    border-bottom: 2px solid $boldpurple;
+                }
+
+                &::placeholder{
+                    color: transparent;
+                }
+
+            }
+
+            label{
+                color: $char;
+                position: relative;
+                top: -1.4em;
+                left: 1.7em;
+                cursor: auto;
+                
+            }
+
+            .input-group{
+                padding: 1% 0;
+                position: relative;
+
+                i{
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+}
