@@ -79,7 +79,7 @@ main{
 
 
 section{
-    height: 90vh;
+    height: 100vh;
     padding: 5rem 1.5rem;
     display: flex;
     // align-items: center;
@@ -116,6 +116,19 @@ section{
             background-color: $boldpurple;
         }
 
+    }
+
+    &:nth-of-type(2){
+        background-color: $redwine;
+
+        h1, p{
+            color: $lightpurple;
+        }
+
+        button{
+            background-color: $lightpurple;
+            color: $boldpurple;
+        }
     }
 
 }
