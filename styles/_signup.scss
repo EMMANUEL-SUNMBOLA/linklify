@@ -11,7 +11,7 @@
 
     .container{
         background-color: white;
-        width: 500px;
+        width: 90%;
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 20px 35px rgba(0,0,1,0.9);
@@ -26,25 +26,25 @@
 
         form{
             margin: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
 
             input{
                 color: inherit;
                 width: 100%;
                 background-color: transparent;
                 border: none;
-                border-bottom: 1px solid $char;
-                padding-left: 1.5rem;
+                // border-bottom: 1px solid $char;
+                padding-left: 2rem;
                 font-size: 15px;
 
                 &:focus{
                     outline: transparent;
                     background-color: transparent;
-                    border-bottom: 2px solid $boldpurple;
+                    // border-bottom: 2px solid $boldpurple;
                 }
 
-                &::placeholder{
-                    color: transparent;
-                }
 
             }
 
@@ -54,14 +54,18 @@
                 top: -1.4em;
                 left: 1.7em;
                 cursor: auto;
+                display: none;
                 
             }
 
             .input-group{
                 padding: 1% 0;
                 position: relative;
+                border-bottom: 1px solid;
 
                 i{
+                    padding-bottom: 1rem;
+                    font-size: 20px;
                     position: absolute;
                 }
             }
