@@ -11,9 +11,9 @@ fetch('http://localhost:5543/verify', {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      username: "Emmanuel77%",
-      email: "adedayoforgit@g9mail.com",
-      password: "20052907"
+      username: "emmanuel",
+      email: "adedayoforgit@gmail.com",
+      password: "Ca"
     })
   })
   .then(res => res.json())
