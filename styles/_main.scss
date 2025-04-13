@@ -4,77 +4,87 @@ main{
     height: 100vh;
     display: flex;
     padding: 15rem 2rem;
-    gap: 2rem;
     // align-items: center;
     // justify-content: center;
-    flex-direction: column;
     background-color: lightblue;
+    
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 
-    .branding{
-        font-size: 50px;
-        font-family: "Bungee Spice", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        span{
-            font-family: "Bungee Tint", sans-serif;
+        .branding{
+            font-size: 50px;
+            font-family: "Bungee Spice", sans-serif;
             font-weight: 400;
             font-style: normal;
-        }
-    }
-
-    .about{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-        p:nth-of-type(1){
-            font-size: 30px;
-        }
-
-        p{
-            font-size: 25px;
-        }
-
-    }
-
-    .form{
-
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-
-        input{
-            width: 90%;
-            height: 70px;
-            font-size: 30px;
-            font-weight: 200;
-            outline: 0;
-            border: 0;
-            text-align: center;
-            border-radius: 5px;
-        }
-
-        button{
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            font-size: 18px;
-
-            width: 30%;
-            height: 50px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            transition: all .5s ease-in-out;
-            
-            &:hover{
-                background-color: transparent;
-                outline: 1px solid;
-                color: black;
+            span{
+                font-family: "Bungee Tint", sans-serif;
+                font-weight: 400;
+                font-style: normal;
             }
         }
+    
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+    
+            p:nth-of-type(1){
+                font-size: 30px;
+            }
+    
+            p{
+                font-size: 25px;
+            }
+    
+        }
+    
+        .form{
+    
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+    
+            input{
+                width: 90%;
+                height: 70px;
+                font-size: 30px;
+                font-weight: 200;
+                outline: 0;
+                border: 0;
+                text-align: center;
+                border-radius: 5px;
+            }
+    
+            button{
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 18px;
+    
+                width: 30%;
+                height: 50px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                transition: all .5s ease-in-out;
+                
+                &:hover{
+                    background-color: transparent;
+                    outline: 1px solid;
+                    color: black;
+                }
+            }
+    
+        }
 
     }
+
+    .illustration{
+        display: none;
+    }
+
 }
 
 
@@ -84,36 +94,50 @@ section{
     display: flex;
     // align-items: center;
     // justify-content: center;
-    flex-direction: column;
-    gap: 2.5rem;
-
-    h1{
-        font-size: 35px;
+    
+    .illustration{
+        display: none;
     }
 
-    p{
-        font-size: 30px;
-        line-height: 35px;
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        h1{
+            font-size: 35px;
+        }
+    
+        p{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    
+        button{
+            width: 50%;
+            height: 70px;
+            border-radius: 999px;
+            font-size: 25px;
+            color: white;
+        }
+
     }
 
-    button{
-        width: 50%;
-        height: 70px;
-        border-radius: 999px;
-        font-size: 25px;
-        color: white;
-    }
 
 
     &:first-of-type{
         background-color: $lightpurple;
 
-        h1, p{
-            color: $boldpurple;
-        }
+        .container-main{
 
-        button{
-            background-color: $boldpurple;
+            h1, p{
+                color: $boldpurple;
+            }
+    
+            button{
+                background-color: $boldpurple;
+            }
+
         }
 
     }
@@ -121,14 +145,19 @@ section{
     &:nth-of-type(2){
         background-color: $redwine;
 
-        h1, p{
-            color: $lightpurple;
+        .container-main{
+
+            h1, p{
+                color: $lightpurple;
+            }
+    
+            button{
+                background-color: $lightpurple;
+                color: $boldpurple;
+            }
+
         }
 
-        button{
-            background-color: $lightpurple;
-            color: $boldpurple;
-        }
     }
 
 }

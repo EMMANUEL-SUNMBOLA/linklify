@@ -3,6 +3,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
+    scroll-behavior: smooth
 }
 
 @import "main";
@@ -17,7 +18,110 @@
             .brand-name{
                 display: none;
             }
+
+            .brand-name2{
+                font-size: 30px;
+                font-family: "Winky Rough", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+            }
         }
     }
     
+}
+
+@media (min-width: 1024px) {
+
+    nav{
+        // background-color: red;
+        top: -12%;
+        width: 70%;
+        height: 90px;
+
+        .brand{
+            .brand-name{
+                font-size: 35px;
+                font-family: "Winky Rough", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+            }
+        }
+    }
+
+    main, section{
+        // align-items: center;
+        justify-content: center;
+        padding: 15%;
+    }
+
+    main{
+
+        flex-direction: row;
+        padding: 15rem 2rem;
+
+        .container-main{
+            width: 50%;
+
+            .form{
+
+                flex-direction: row;
+                align-items: center;
+                // justify-content: center;
+                input{
+                    width: 50%;
+                    height: 50px;
+                }
+    
+                button{
+                    width: 20%;
+                    border-radius: 999px;
+                    border: none;
+                    outline: none;
+                }
+    
+            }
+
+        }
+
+        .illustration{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: max-content;
+            // display: block;
+            width: 40%;
+            // outline: 1px solid red;
+
+            img{
+                width: 60%;
+            }
+        }
+    }
+
+    section{
+        height: 110vh;
+        flex-direction: row;
+        padding: 15rem 2rem;
+
+        .container-main{
+            width: 50%;
+        }
+
+        .illustration{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: max-content;
+            // display: block;
+            width: 40%;
+            // outline: 1px solid red;
+
+            img{
+                width: 60%;
+            }
+        }
+    }
+
 }
