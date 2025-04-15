@@ -103,6 +103,7 @@ section{
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
+        transition: all .5s ease-in-out;
 
         h1{
             font-size: 35px;
@@ -136,6 +137,12 @@ section{
     
             button{
                 background-color: $boldpurple;
+
+                &:hover{
+                    background-color: white;
+                    color: $boldpurple;
+                    outline: 1px solid $boldpurple;
+                }
             }
 
         }
@@ -154,6 +161,11 @@ section{
             button{
                 background-color: $lightpurple;
                 color: $boldpurple;
+
+                &:hover{
+                    background-color: white;
+                    color: $boldpurple;
+                }
             }
 
         }

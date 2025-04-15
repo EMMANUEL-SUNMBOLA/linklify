@@ -35,9 +35,10 @@
 
     nav{
         // background-color: red;
-        top: -12%;
-        width: 70%;
-        height: 90px;
+        top: -10%;
+        width: 50%;
+        height: 80px;
+        // display: none;
 
         .brand{
             .brand-name{
@@ -76,7 +77,8 @@
 
             .form-container{
                 margin: 0;
-                height:80vh ;
+                // height:80vh ; 
+                padding: 2rem 0;
             }
         }
 
