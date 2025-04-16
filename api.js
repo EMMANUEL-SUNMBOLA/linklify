@@ -8,7 +8,7 @@ form.addEventListener("submit", (e)=>{
   const password = document.querySelector("#password");
 
 
-  fetch('http://localhost:5543/create', {
+  fetch('http://localhost:5543/api/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

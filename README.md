@@ -16,4 +16,4 @@
 
 - Now signup form data is being sent directly to the API (I know it's a security flaw and I'll add some validations soon, but any data sent from anywhere is also being validated and sanitized at the API, won't this cause a delay or speed issue?)
 
-
+- The sign up and signin page now looks like what I see in recent websites
