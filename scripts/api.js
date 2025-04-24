@@ -1,4 +1,7 @@
 let form = document.querySelector("#signupform");
+let errorDiv = document.querySelector(".err-div")
+
+errorDiv.textContent("toor")
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -27,6 +30,7 @@ form.addEventListener("submit", async (e) => {
     // }
     form.reset();
   } catch (error) {
+
     console.log("error:", error);
   }
 });
