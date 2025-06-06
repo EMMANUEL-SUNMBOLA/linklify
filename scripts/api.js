@@ -1,15 +1,15 @@
 let form = document.querySelector("#signupform");
 let errorDiv = document.querySelector(".err-div")
 
-errorDiv.textContent("toor")
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-
+  // alert("test")
+  
   const username = document.querySelector("#username");
   const email = document.querySelector("#email");
   const password = document.querySelector("#password");
-
+  
   try {
     const response = await fetch("http://localhost:5543/api/create", {
       method: "POST",
@@ -23,14 +23,21 @@ form.addEventListener("submit", async (e) => {
       }),
     });
     const data = await response.json();
-    console.log(data);
 
-    // if (data.error.error) {
-    //   console.log("data:", data.error.messages);
-    // }
-    form.reset();
-  } catch (error) {
+    if(data.error){
 
-    console.log("error:", error);
+      let messages = Object.values(data.message).join("<br>");
+      errorDiv.innerHTML = messages;
+      console.log(data);
+    }else{
+
+      errorDiv.innerHTML = "";
+      form.reset();
+    }
+
+    } catch (error) {
+      
+      errorDiv.innerHTML = "errJson.message";
+      console.log("error:", error);
   }
 });
