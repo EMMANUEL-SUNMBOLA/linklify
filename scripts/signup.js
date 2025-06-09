@@ -1,10 +1,9 @@
-let form = document.querySelector("#signupform");
+let signupform = document.querySelector("#signupform");
 let errorDiv = document.querySelector(".err-div")
 
 
-form.addEventListener("submit", async (e) => {
+signupform.addEventListener("submit", async (e) => {
   e.preventDefault();
-  // alert("test")
   
   const username = document.querySelector("#username");
   const email = document.querySelector("#email");
@@ -23,21 +22,33 @@ form.addEventListener("submit", async (e) => {
       }),
     });
     const data = await response.json();
+    // alert("test")
 
-    if(data.error){
-
-      let messages = Object.values(data.message).join("<br>");
+    if (data.error) {
+      let messages;
+    
+      if (typeof data.message === "string") {
+        messages = data.message;
+      } else if (typeof data.message === "object") {
+        messages = Object.values(data.message).join("<br>");
+      } else {
+        messages = "An unknown error occurred.";
+      }
+    
       errorDiv.innerHTML = messages;
       console.log(data);
-    }else{
-
+    } else {
       errorDiv.innerHTML = "";
-      form.reset();
+      signupform.reset(); // fix: you wrote `form.reset()` but should be `signupform.reset()`
     }
+    
 
     } catch (error) {
       
       errorDiv.innerHTML = "errJson.message";
       console.log("error:", error);
-  }
+    }
 });
+
+
+

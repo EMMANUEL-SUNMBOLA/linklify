@@ -34,20 +34,21 @@
         </div>
 
         <div class="container">
+
             <div class="form-container" style="justify-content: center;">
     
                 <h1 class="form-title">Log-In</h1>
-                <form action="">
+                <form action="" id="signinform">
         
                     <div class="input-group">
                         <i class="ri-mail-fill"></i>
-                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="email" placeholder="Email" id="email">
                         <label for="email">Email</label>
                     </div>
         
                     <div class="input-group">
                         <i class="ri-key-fill"></i>
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Password" id="password">
                         <label for="password">Password</label>
                     </div>
         
@@ -58,11 +59,14 @@
                     </div>
                 </form>
     
+                <div class="err-div"></div>
+
             </div>
+
         </div>
     </div>
 
+    <script src="/scripts/signin.js"></script>
     <script src="/scripts/main.js"></script>
-    <script src="/scripts/api.js"></script>
 </body>
 </html>
