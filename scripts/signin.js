@@ -3,7 +3,6 @@ let errorDiv = document.querySelector(".err-div")
 
 signinform.addEventListener("submit", async (e) => {
     e.preventDefault();
-    alert("test")
     
     const email = document.querySelector("#email");
     const password = document.querySelector("#password");
