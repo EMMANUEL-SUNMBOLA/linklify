@@ -1,0 +1,109 @@
+:root {
+  --lightpurple: #e9c3e9;
+  --boldpurple: #4f2273;
+  --redwine: #770016;
+  --cyan: #c9d6ff;
+  --white: #e2e2e2;
+  --char: #757575;
+}
+
+
+@import 'variables';
+
+main{
+
+    height: 100vh;
+    display: flex;
+    padding: 15rem 2rem;
+    background-color: lightblue;
+
+}
+
+main .container-main{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+main .container-main .branding{
+
+    font-size: 50px;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+main .container-main .branding span{
+
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main .container-main .about{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    
+}
+
+main .container-main .about p:nth-of-type(1){
+    font-size: 30px;
+}
+
+main .container-main .about p{
+    font-size: 25px;
+}
+
+main .container-main .form{
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+
+main .container-main .form input{
+
+    width: 90%;
+    height: 70px;
+    font-size: 30px;
+    font-weight: 200;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+main .container-main .form button{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+
+    width: 30%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    
+    
+}
+
+main .container-main .form button:hover{
+    background-color: transparent;
+    outline: 1px solid;
+    color: black;
+}
+
+main .illustration{
+    display: none;
+}
+

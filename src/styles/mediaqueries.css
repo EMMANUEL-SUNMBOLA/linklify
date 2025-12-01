@@ -1,0 +1,113 @@
+@media (min-width: 1024px) {
+
+    /* nav {
+        top: -10%;
+        width: 50%;
+        height: 80px;
+    } */
+
+    /* nav .brand .brand-name {
+        font-size: 35px;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    } */
+
+    .signup {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup .signupimg {
+        width: 60%;
+        height: 100vh;
+        display: inline;
+    }
+
+    .signup .signupimg img {
+        width: 100%;
+        height: inherit;
+    }
+
+    .signup .container {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .signup .container .form-container {
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    main,
+    section {
+        justify-content: center;
+        padding: 15%;
+    }
+
+    main {
+        flex-direction: row;
+        padding: 15rem 2rem;
+    }
+
+    main .container-main {
+        width: 30%;
+    }
+
+    main .container-main .form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main .container-main .form input {
+        width: 50%;
+        height: 50px;
+    }
+
+    main .container-main .form button {
+        width: 20%;
+        border-radius: 999px;
+        border: none;
+        outline: none;
+    }
+
+    main .illustration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+        width: 40%;
+    }
+
+    main .illustration img {
+        width: 60%;
+    }
+
+    section {
+        height: 110vh;
+        flex-direction: row;
+        padding: 15rem 2rem;
+    }
+
+    section .container-main {
+        width: 30%;
+    }
+
+    section .illustration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+        width: 40%;
+    }
+
+    section .illustration img {
+        width: 60%;
+    }
+}

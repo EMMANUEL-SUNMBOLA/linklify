@@ -6,11 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
 
- $lightpurple: #e9c3e9;
- $boldpurple: #4f2273;
+:root{
 
- $redwine: #770016;
+    --lightpurple: #e9c3e9;
+    --boldpurple: #4f2273;
+   
+    --redwine: #770016;
+   
+    --cyan: #c9d6ff;
+    --white: #e2e2e2;
+    --char: #757575;
 
- $cyan: #c9d6ff;
- $white: #e2e2e2;
- $char: #757575;
+}

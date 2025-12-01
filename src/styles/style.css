@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "tailwindcss";
+
+
+:root {
+    --lightpurple: #e9c3e9;
+    --boldpurple: #4f2273;
+    --redwine: #770016;
+    --cyan: #c9d6ff;
+    --white: #e2e2e2;
+    --char: #757575;
+  }
+  
+  *{
+    scroll-behavior: smooth;
+  }
+  
+  main{
+  
+      height: 100vh;
+      display: flex;
+      gap: 5%;
+      align-items: center;
+      justify-content: center;
+      padding: 25rem 2rem;
+      background-color: lightblue;
+  
+  }
+  
+  main .container-main{
+  
+      display: flex;
+      flex-direction: column;
+      /* gap: 2rem; */
+      width: 40%;
+  
+  }
+  
+  main .container-main .branding{
+  
+      font-size: 50px;
+      font-family: "Bungee Spice", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  
+  }
+  
+  main .container-main .branding span{
+  
+      font-family: "Bungee Tint", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  main .container-main .about{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  main .container-main .about p:nth-of-type(1){
+      font-size: 30px;
+  }
+  
+  main .container-main .about p{
+      font-size: 25px;
+  }
+  
+  main .container-main .form{
+  
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      /* justify-content: center; */
+      width: 100%;
+  
+  }
+  
+  main .container-main .form input{
+  
+      width: 60%;
+      height: 70px;
+      font-size: 25px;
+      font-weight: 200;
+      font-family: monospace;
+      outline: 0;
+      border: 0;
+      text-align: center;
+      border-radius: 5px;
+      outline: 1px solid hotpink;
+      background-color: var(--white);
+      @apply rounded-2xl;
+  
+  }
+  
+  main .container-main .form button{
+  
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 18px;
+  
+      width: 30%;
+      height: 70px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      transition: all .5s ease-in-out;
+      @apply rounded-2xl;
+      
+  }
+  
+  main .container-main .form button:hover{
+      @apply bg-white/30 backdrop-sepia-0;
+      outline: 1px solid;
+      color: black;
+  }
+  
+  .illustration{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+  }
+
+  .illustration img{
+
+    width: 300px;
+    height: 300px;
+
+  }
+
+
+
+/* .btn:hover{
+    outline: 1px solid blue;
+    @apply bg-white/30 backdrop-sepia-0;
+} */
+
+
+  

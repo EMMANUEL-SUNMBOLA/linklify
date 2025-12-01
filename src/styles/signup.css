@@ -1,0 +1,150 @@
+:root {
+    --lightpurple: #e9c3e9;
+    --boldpurple: #4f2273;
+    --redwine: #770016;
+    --cyan: #c9d6ff;
+    --white: #e2e2e2;
+    --char: #757575;
+  }
+  
+  *{
+    scroll-behavior: smooth;
+  }
+
+
+.signup{
+
+    background-color: var(--cyan);
+    background: linear-gradient(to right, var(--white), var(--cyan));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.signup .signupimg{
+
+    display: none;
+
+}
+
+.signup .container{
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.signup .container .form-container{
+
+    background-color: white;
+    margin-top: 20vh;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,1,0.9);
+
+}
+
+.signup .container .form-container .form-title{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+
+}
+
+.signup .container .form-container .err-div{
+
+    padding: 2rem;
+    text-align: left;
+    font-size: 20px ;
+    color: red;
+    font-family: monospace;
+
+}
+
+.signup .container .form-container form{
+
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.signup .container .form-container form button{
+
+    width: 100%;
+    height: 30px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+
+}
+
+.signup .container .form-container form button:hover{
+
+    background-color: transparent;
+    outline: 1px solid;
+    color: Black;
+
+}
+
+.signup .container .form-container form .input-group{
+
+    padding: 1% 0;
+    position: relative;
+    border-bottom: 1px solid;
+    
+}
+
+.signup .container .form-container form .input-group:last-of-type{
+
+    border-bottom: none;
+
+}
+
+.signup .container .form-container form .input-group input{
+
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 2rem;
+    font-size: 20px;
+
+}
+
+.signup .container .form-container form .input-group input:focus{
+
+    background-color: transparent;
+    outline: none;
+
+}
+
+.signup .container .form-container form .input-group label{
+
+    color: var(--char);
+    position: relative;
+    top: -1.4em;
+    left: 1.7em;
+    cursor: auto;
+    display: none;
+    
+}
+
+.signup .container .form-container form .input-group i{
+
+    padding-bottom: 1rem;
+    font-size: 25px;
+    position: absolute;
+
+}

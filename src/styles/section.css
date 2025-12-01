@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+:root {
+    --lightpurple: #e9c3e9;
+    --boldpurple: #4f2273;
+    --redwine: #770016;
+    --cyan: #c9d6ff;
+    --white: #e2e2e2;
+    --char: #757575;
+  }
+
+section{
+    
+    height: 100vh;
+    width: 100%;
+    padding: 5rem 1.5rem;
+    display: flex;
+
+}
+
+section .container-main{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: all .5s ease-in-out;
+    width: 50%;
+    
+}
+
+
+section:first-of-type{
+    background-color: var(--lightpurple);
+
+    
+}
+
+section:first-of-type .container-main h1, p{
+
+    color: var(--boldpurple);
+
+    /* button{
+        background-color: $boldpurple;
+
+        &:hover{
+            background-color: white;
+            color: $boldpurple;
+            outline: 1px solid $boldpurple;
+        }
+    } */
+
+}
+
+section:nth-of-type(2){
+
+    /* background-color: var(--redwine); */
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+
+    width: 30%;
+    height: 70px;
+    color: white;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    @apply rounded-2xl;
+}
+
+.btn:hover{
+    /* outline: 1px solid blue; */
+    background-color: green;
+    color: hotpink;
+    /* @apply bg-white/30 backdrop-sepia-0; */
+}
+/* section:nth-of-type(2) .container-main h1, p{
+
+    color: var(--lightpurple);
+
+    
+} */
+/* button{
+    background-color: $lightpurple;
+    color: $boldpurple;
+
+    &:hover{
+        background-color: white;
+        color: $boldpurple;
+    }
+} */

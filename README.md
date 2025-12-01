@@ -1,19 +1,16 @@
-### LINKLIFY
- The plan is to build a linktree for web3 idolos, where they can add project links && socails links
+# React + Vite
 
-## MVC
-- signup
-- dashboard where links can be added a or removed
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
-## PLAN
-- I will build a seperate api with php ,that will validate users
-- The api will also return the users linktree data like links stored blah blah
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-![mockup]("images/mockup.jpg")
+## React Compiler
 
-## UPDATE
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Now signup form data is being sent directly to the API (I know it's a security flaw and I'll add some validations soon, but any data sent from anywhere is also being validated and sanitized at the API, won't this cause a delay or speed issue?)
+## Expanding the ESLint configuration
 
-- The sign up and signin page now looks like what I see in recent websites
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
