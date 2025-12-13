@@ -1,7 +1,7 @@
 function NavBar() {
 
         return (
-            <nav className="bg-red-400 fixed top-4 left-30 flex w-[80%] h-[10vh] gap-[700px] rounded-3xl place-self-center items-center">
+            <nav className="bg-red-400 fixed top-4 lg:left-30 left-[10%] flex w-[80%] h-[10vh] lg:gap-[700px] rounded-3xl place-self-center lg:items-center ">
 
                 <div className="brand flex items-center gap-[2px]">
                     <div className="logo w-[100px]"><img src="images/linklifylogo3.png" alt=""></img></div>

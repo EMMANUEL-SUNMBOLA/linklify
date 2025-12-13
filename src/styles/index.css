@@ -14,22 +14,21 @@ main{
 
     height: 100vh;
     display: flex;
-    padding: 15rem 2rem;
-    background-color: lightblue;
+    /* padding: 15rem 2rem; */
+    background-color: red;
 
 }
 
 main .container-main{
 
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    /* flex-direction: column; */
 
 }
 
 main .container-main .branding{
 
-    font-size: 50px;
+    font-size: 20px;
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -107,3 +106,14 @@ main .illustration{
     display: none;
 }
 
+@media (min-width: 1024px){
+
+    main .container-main{
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+    }
+
+}
