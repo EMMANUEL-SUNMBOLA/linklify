@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Link({icon, platform}) {
   return (
-    <div className="w-full flex  p-3 gap-3">
-      <div className="w-[10%] bg-amber-600 test">{icon}</div>
-      <div className="w-[80%] text-3xl text-center text-capitalize"> {platform} </div>
+    <div className="w-full flex p-2 gap-1">
+      <div className="w-[5%] bg-amber-600">{icon}</div>
+      <div className="w-[] text-xl font-extralight text-center text-capitalize"> {platform} </div>
     </div>
   )
 }
